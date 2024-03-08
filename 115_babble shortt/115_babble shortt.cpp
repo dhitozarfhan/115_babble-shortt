@@ -25,4 +25,23 @@ void input() {
 	}
 }
 
+void bubbleSortArray() {
+	int pass = 1;
+
+	do {
+		for (int j = 0; j <= n - 1 - pass; j++) {
+
+			if (a[j] > a[j + 1]) {
+				int temp;
+				temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			}
+		}
+		pass = pass + 1;
+
+	} while (pass <= n - 1);
+}
+
+
 
